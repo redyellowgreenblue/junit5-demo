@@ -15,9 +15,17 @@ sourceCompatibility = 12
 targetCompatibility = 12
 
 repositories {
+//	maven { url "https://repo.spring.io/snapshot" }
+//	maven { url "https://repo.spring.io/milestone" }
+	maven {
+		// https://developer.aliyun.com/mvn/guide
+		url "https://maven.aliyun.com/repository/public"
+	}
+	maven {
+		url "https://maven.aliyun.com/repository/spring"
+	}
+	mavenLocal()
 	mavenCentral()
-	maven { url "https://repo.spring.io/snapshot" }
-	maven { url "https://repo.spring.io/milestone" }
 }
 
 // Special syntax for overriding spring-boot-dependencies
